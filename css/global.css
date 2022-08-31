@@ -26,6 +26,12 @@
   float: right;
 }
 
+body {
+  background-color: #83b883
+  padding: 10px;
+  overflow: hidden;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
