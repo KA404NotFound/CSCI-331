@@ -22,7 +22,7 @@ echo "<p><strong>$firstname</strong> has been added.</p>";
 
 // DATABASE OPERATIONS:
 // https://www.w3schools.com/php/php_mysql_insert.asp
-$servername = "csci331.cs.montana.edu";
+$servername = "localhost";
 $username = "user73";
 $password = "73grab";
 $dbname = "db73";
