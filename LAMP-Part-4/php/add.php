@@ -44,6 +44,19 @@ if ($conn->query($sql) === TRUE) {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
+// modified from https://www.w3schools.com/php/php_mysql_select.asp
+$sql = "SELECT first from randuser";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+    echo "First Name: ". $row["first"] . "<br>";
+  }
+} else {
+  echo "0 results";
+}
+
 $conn->close();
 
 ?>
