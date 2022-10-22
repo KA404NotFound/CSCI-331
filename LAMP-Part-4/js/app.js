@@ -22,13 +22,17 @@ fetch('https://randomuser.me/api')      // ...1st Promise obj resolves to Respon
             const apiFirst = userData.results[0].name.first;
             const apiLast = userData.results[0].name.last;
             const apiCountry = userData.results[0].location.country;
+            const apiCity = userData.results[0].location.city;
             const apiTime = userData.results[0].location.timezone.offset;
 
             const htmlData = `
             <img  class="user" src=${userData.results[0].picture.large} alt="rando user">
             <h2 class="user">${apiFirst} ${apiLast}</h2>
-            <p class="user">${apiFirst} lives in ${apiCountry} </p>
+            <p class="user">${apiFirst} lives in ${apiCity}, ${apiCountry} </p>
             <input type="hidden" name="apiFirst" value="${apiFirst}"/>
+            <input type="hidden" name="apiLast" value="${apiLast}"/>
+            <input type="hidden" name="apiCountry" value="${apiCountry}"/>
+            <input type="hidden" name="apiCity" value="${apiCity}"/>
             `
             apiData = document.getElementById("apiData")
             apiData.innerHTML = htmlData
