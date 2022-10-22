@@ -93,6 +93,15 @@ $conn->close();
     <br><br>
     <button class="btn btn-lg btn-primary active" onclick="history.back()">Back</button>
 </div>
+
+<div class="mt-4 p-5 bg-warning text-black rounded">
+  <h1>Bootstrap Explanation</h1>
+  <ul>
+    <li>Centered enlarged, and colored the <strong>User Data</strong> Text</li>
+    <li>Added container classes around both the table and headings/alerts</li>
+    <li>Used alerts for the person added as well as indicating a new record</li>
+    <li>Used a zebra striped hover table</li>
+    <li>Enlarged the <strong>Back</strong> button and made it primary active</li>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
