@@ -7,7 +7,7 @@
     <title>User Listing</title>
 </head>
 <body>
-    <h1 class="display-1">User Data</h1>
+    <h1 class="display-1 text-center text-primary">User Data</h1>
 
     <div class="container">
       <h1>Added to Stack</h1>
@@ -59,7 +59,7 @@ if ($conn->query($sql) === TRUE) {
   </div>
   </div>
   <div class="container">
-    <table class="table table-stiped table-hover">
+    <table class="table table-striped table-hover">
         <thread>
           <tr>
             <th>First Name</th>
@@ -91,7 +91,7 @@ $conn->close();
     </tbody>
     </table>
     <br><br>
-    <button class="btn btn-primary active" onclick="history.back()">Back</button>
+    <button class="btn btn-lg btn-primary active" onclick="history.back()">Back</button>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
