@@ -10,6 +10,7 @@
     <h1 class="display-1">User Data</h1>
     <h1>Added to Stack</h1>
 
+    <div class="row">
   
 
 <!-- 
@@ -46,25 +47,26 @@ if ($conn->connect_error) {
 $sql = "INSERT INTO randusers VALUES ('$firstname', '$lastname', '$city', '$country')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "<div class=' col-6 alert alert-info'><p>New record created successfully</p></div>";
+  echo "<div class='col-6 alert alert-info'><p>New record created successfully</p></div>";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 ?>
 
-  <table class="table table-stiped table-hover">
-      <thread>
-        <tr>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>City</th>
-          <th>Country</th>
-        </tr>
-      </thread>
-      <tbody>
+  </div>
+    <table class="table table-stiped table-hover">
+        <thread>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>City</th>
+            <th>Country</th>
+          </tr>
+        </thread>
+        <tbody>
 
-<?php
+  <?php
 
 // modified from https://www.w3schools.com/php/php_mysql_select.asp
 $sql = "SELECT first, last, city, country from randusers";
