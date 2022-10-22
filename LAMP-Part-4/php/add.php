@@ -8,9 +8,11 @@
 </head>
 <body>
     <h1 class="display-1">User Data</h1>
-    <h1>Added to Stack</h1>
 
-    <div class="row">
+    <div class="container">
+      <h1>Added to Stack</h1>
+
+      <div class="row">
   
 
 <!-- 
@@ -25,7 +27,7 @@ $firstname = $_GET['apiFirst'];
 $lastname = $_GET['apiLast'];
 $city = $_GET['apiCity'];
 $country = $_GET['apiCountry'];
-echo "<div class='col-6 alert alert-success'><p><strong>$firstname</strong> has been added.</p></div>";
+echo "<div class='col-lg alert alert-info'><p><strong>$firstname</strong> has been added.</p></div>";
 
 
 // DATABASE OPERATIONS:
@@ -47,13 +49,14 @@ if ($conn->connect_error) {
 $sql = "INSERT INTO randusers VALUES ('$firstname', '$lastname', '$city', '$country')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "<div class='col-6 alert alert-info'><p>New record created successfully</p></div>";
+  echo "<div class='col-lg alert alert-success'><p>New record created successfully</p></div>";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 ?>
 
+  </div>
   </div>
     <table class="table table-stiped table-hover">
         <thread>
