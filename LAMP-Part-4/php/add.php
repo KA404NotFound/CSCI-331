@@ -73,7 +73,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "<tr><td>$row["first"]</td>. <td>$row["last"]</td>. <td>$row["city"]</td>. <td>$row["country"]</td></tr>"";
+    echo "<tr><td>$row["first"]</td>. <td>$row["last"]</td>. <td>$row["city"]</td>. <td>$row["country"]</td></tr>";
   }
 } else {
   echo "0 results";
