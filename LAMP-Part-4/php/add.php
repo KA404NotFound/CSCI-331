@@ -43,7 +43,7 @@ if ($conn->connect_error) {
 }
 
 // SQL OPPERATIONS
-$sql = "INSERT INTO randusers (first, last, city, country) VALUES ('$firstname', '$lastname', '$city', '$country')";
+$sql = "INSERT INTO randusers VALUES ('$firstname', '$lastname', '$city', '$country')";
 
 if ($conn->query($sql) === TRUE) {
   echo "<div class='alert alert-info'><p>New record created successfully</p></div>";
@@ -73,7 +73,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "<tr><td>$row["first"]</td>. <td>$row["last"]</td>. <td>$row["city"]</td>. <td>$row["country"]</td></tr>";
+    echo "<tr><td>".$row["first"]."</td><td>".$row["last"]."</td><td>".$row["city"]."</td><td>".$row["country"]."</td></tr>";
   }
 } else {
   echo "0 results";
