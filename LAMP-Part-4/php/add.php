@@ -24,7 +24,7 @@ $firstname = $_GET['apiFirst'];
 $lastname = $_GET['apiLast'];
 $city = $_GET['apiCity'];
 $country = $_GET['apiCountry'];
-echo "<div class='alert alert-success'><p><strong>$firstname</strong> has been added.</p></div>";
+echo "<div class='col-6 alert alert-success'><p><strong>$firstname</strong> has been added.</p></div>";
 
 
 // DATABASE OPERATIONS:
@@ -46,7 +46,7 @@ if ($conn->connect_error) {
 $sql = "INSERT INTO randusers VALUES ('$firstname', '$lastname', '$city', '$country')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "<div class='alert alert-info'><p>New record created successfully</p></div>";
+  echo "<div class=' col-6 alert alert-info'><p>New record created successfully</p></div>";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
