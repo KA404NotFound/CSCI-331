@@ -1,5 +1,26 @@
 {
   "dependencies": {
     "nodemon": "^2.0.20"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "web-server",
+  "version": "1.0.0",
+  "description": "A simple Web server",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KA404NotFound/CSCI-331.git"
+  },
+  "keywords": [
+    "mern"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KA404NotFound/CSCI-331/issues"
+  },
+  "homepage": "https://github.com/KA404NotFound/CSCI-331/MERN#readme"
 }
