@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "forever": "^4.0.3",
     "nodemon": "^2.0.20"
   },
   "scripts": {
@@ -9,7 +10,6 @@
   "version": "1.0.0",
   "description": "A simple Web server",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KA404NotFound/CSCI-331.git"
